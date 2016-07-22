@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <style media="screen">
+    body * {
+      /*width: 100%;*/
+      margin: auto;
+    }
+
+    section *{
+      /*display: inline-block;*/
+    }
+
+    body {
+      font-family: montserrat;
+      background-color: #f1efef;
+      font-size: 80%;
+      margin: 0;
+    }
+
+
+    h1#logo {
+      background-color:black;
+      color: white;
+      padding:0.5em;
+      margin: 0;
+      font-size: 3em;
+    }
+
+    img#bruno {
+      width: 15em;
+      position: static;
+      margin-right: 1em;
+    }
+
+    section#main {
+      margin: 1em;
+    }
+
+    p#bioText {
+      font-size: 1.5em;
+    }
+
+    @media screen and (max-width: 500px) {
+        p#bioText {
+          float: left;
+          padding-top: 1em;
+          padding-bottom: 1em;
+        }
+
+        img#bruno {
+          padding-top: 1em;
+          width: 90%;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+    }
+    </style>
+  </head>
+  <body>
+    <h1 id="logo" >> CoderClub_</h1>
+    <section id="main">
+      <img id="bruno" src="/assets/Bruno8bitbust.png" align="left"/>
+      <p id="bioText">
+        Hi! My name is Ivan.
+        I am a native of Berkeley, where I attended École Bilingue (K-8).
+        I then went to International High School in San Francisco.
+        In 2012, I graduated from Cornell University with a B.A. in Mathematics.
+        After working in the Emergency Room at Highland Hospital in Oakland, I
+        enrolled in a coding bootcamp (App Academy) and learned a ton in a short amout of time.
+        Now, I work as a frontend consultant software engineer at Cisco Systems.
+        <br>
+        <br>
+        I decided to start CoderClub as a way of sharing my knowledge with the future generations of programmers.
+        I have taught kids, both privately and as an after-school program at École Bilingue, and not only is it fun and rewarding,
+        but the kids eat it up.
+        <br>
+        <br>
+        Summer classes are currently being held, <b>enrollment has been closed</b>. Fall enrollment will open in <b>August</b>.
+        <br>
+        <br>
+        <a href="summary.html">Here</a> is a summary of the planned curriculum. I will taylor the curriculum to each student, especially if they are returning veterans. I hope you will join us!
+        <br>
+        <br>
+        Please feel free to email me by clicking <a href="mailto:coderclubinfo@gmail.com">here</a>.
+      </p>
+    </section>
+  </body>
+</html>
