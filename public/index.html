@@ -20,7 +20,7 @@
       margin: 0;
     }
 
-    button#buttonLink:focus {
+    a#buttonLink:focus {
       outline: none;
     }
 
@@ -30,7 +30,7 @@
 
     div#terminal {
       color: white;
-      width: 320px;
+      width: 300px;
       margin-left: auto;
       margin-right: auto;
       }
@@ -42,15 +42,16 @@
       margin: auto;
     }
 
-    button#buttonLink {
-      width: 100%;
+    a#buttonLink {
+      display: block;
+      text-align: center;
       background-color: rgb(23, 23, 39);
       color: white;
       border: 2px white solid;
-      margin: 0.5em 0;
       padding: 0.5em;
       text-decoration: none;
       font-size: 50%;
+      margin-bottom: 0.5em
     }
 
     section#main {
@@ -65,7 +66,7 @@
       padding: 0.4em;
       border: 2px white solid;
       margin-bottom: 0.3em;
-      font-size: 250%;
+      font-size: 0.8em;
     }
 
     </style>
@@ -74,12 +75,12 @@
     <section id="main">
       <div id="terminal">
         <div id="terminalCode"> > <span class="text"></span></div>
-        <button id='buttonLink' class='bio' href='summary.html' style='opacity:0'>About the Club</button>
-        <br><button id='buttonLink' class='curriculum' style='opacity:0'>Curriculum</button>
-        <br><button id='buttonLink' class='facebook' style='opacity:0'>Like us on Facebook</button>
-        <br><button id='buttonLink' class='twitter' style='opacity:0'>Follow us on Twitter</button>
-        <!-- <br><button id='buttonLink' class='enroll' style='opacity:0'>Sign Up Here</button> -->
-        <br><button id='buttonLink' class='email' style='opacity:0'>Email Us</button>
+        <a id='buttonLink' class='bio' href='bio.html' style='opacity:0'>About the Club</a>
+        <a href="summary" id='buttonLink' class='curriculum' style='opacity:0'>Curriculum</a>
+        <a href="https://www.facebook.com/thecoderclub/" id='buttonLink' target="_blank" class='facebook' style='opacity:0'>Like us on Facebook</a>
+        <a href="https://twitter.com/CoderClubTweets" id='buttonLink' target="_blank" class='twitter' style='opacity:0'>Follow us on Twitter</a>
+        <!-- <a href="" id='buttonLink' class='enroll' style='opacity:0'>Sign Up Here</a> -->
+        <a href="mailto:coderclubinfo@gmail.com" id='buttonLink' target="_blank" class='email' style='opacity:0'>Email Us</a>
       </div>
     </section>
   </body>
@@ -98,11 +99,11 @@
   };
 
   addButton = function () {
-    $('button#buttonLink').animate({
+    $('a#buttonLink').animate({
       'opacity':1
     }, 1000)
 
-    $('button#buttonLink').hover(
+    $('a#buttonLink').hover(
     function () {
       $(this).css({
         'cursor': 'pointer',
@@ -111,40 +112,38 @@
     },
     function functionName() {
       $(this).css({
-        'width': '100%',
         'background-color': 'rgb(23, 23, 39)',
         'color': 'white',
         'border': '2px white solid',
-        'margin': '0.5em 0',
         'padding': '0.5em',
         'text-decoration': 'none',
         'font-size': '50%'
       })
     })
 
-    $('button.bio').click(function () {
-      window.location.href = "bio.html";
-    })
-
-    $('button.curriculum').click(function () {
-      window.location.href = "summary.html";
-    })
-
-    $('button.enroll').click(function () {
-      window.location.href = "//docs.google.com/forms/d/e/1FAIpQLSeJFCEAgvUdFj3stVvFLxroo_NDGoEJI6_SWWWO6gYpPWoxWg/viewform";
-    })
-
-    $('button.email').click(function () {
-      window.location.href = "mailto:coderclubinfo@gmail.com";
-    })
-
-    $('button.twitter').click(function () {
-      window.open("https://twitter.com/CoderClubTweets");
-    })
-
-    $('button.facebook').click(function () {
-      window.open("https://www.facebook.com/thecoderclub/");
-    })
+    // $('button.bio').click(function () {
+    //   window.location.href = "bio.html";
+    // })
+    //
+    // $('button.curriculum').click(function () {
+    //   window.location.href = "summary.html";
+    // })
+    //
+    // $('button.enroll').click(function () {
+    //   window.location.href = "//docs.google.com/forms/d/e/1FAIpQLSeJFCEAgvUdFj3stVvFLxroo_NDGoEJI6_SWWWO6gYpPWoxWg/viewform";
+    // })
+    //
+    // $('button.email').click(function () {
+    //   window.location.href = "mailto:coderclubinfo@gmail.com";
+    // })
+    //
+    // $('button.twitter').click(function () {
+    //   window.open("https://twitter.com/CoderClubTweets");
+    // })
+    //
+    // $('button.facebook').click(function () {
+    //   window.open("https://www.facebook.com/thecoderclub/");
+    // })
   };
 
   typedCb = function () {
