@@ -135,14 +135,14 @@
         })
       })
     } else {
-      $('a#buttonLink').mousedown(function () {
+      $('a#buttonLink').touchstart(function () {
         console.log('down');
         $(this).css({
           'cursor': 'pointer',
           'background-color': 'rgb(81, 84, 117)',
         })
       })
-      $('a#buttonLink').mouseup(function () {
+      $('a#buttonLink').touchend(function () {
         console.log('up');
         $(this).css({
           'background-color': 'rgb(23, 23, 39)',
