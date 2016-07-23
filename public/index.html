@@ -135,7 +135,7 @@
         })
       })
     } else {
-      $('a#buttonLink').tap(function () {
+      $('a#buttonLink').on('tap', function () {
         console.log('down');
         $(this).css({
           'cursor': 'pointer',
